@@ -1,0 +1,14 @@
+{
+  "name": "jslox",
+  "version": "1.0.0",
+  "description": "Interpreter for the Lox Language implemented in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "jslox": "node index.js"
+  },
+  "keywords": [
+    "interpreter"
+  ],
+  "author": "Nedwize",
+  "license": "ISC"
+}
