@@ -60,7 +60,7 @@ class Scanner {
     }
 
     peekNext() {
-        if (this.current + 1 >= this.source.length()) return '\0'
+        if (this.current + 1 >= this.source.length) return '\0'
         return this.source.charAt(this.current + 1)
     }
 
