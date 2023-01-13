@@ -44,7 +44,7 @@ class Scanner {
     }
 
     advance() {
-        return this.source.charAt(this.current++)
+        return this.source.charAt(this.current++) // This is just peak + move forward by 1
     }
 
     match(expected) {
@@ -194,7 +194,8 @@ class Scanner {
             case '/':
                 if (this.match('/')) {
                     // A comment goes until the end of the line.
-                    while (peek() != '\n' && !this.isAtEnd()) this.advance()
+                    while (this.peek() != '\n' && !this.isAtEnd())
+                        this.advance()
                 } else {
                     this.addToken(TOKENS.SLASH)
                 }
